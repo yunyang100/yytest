@@ -6,12 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -60,9 +57,9 @@ public class DBActivity extends ListActivity {
         adapter.changeCursor(c);
     }
     private String getCurdate(){
-        SimpleDateFormat formatter    =   new    SimpleDateFormat    ("yyyy/MM/dd    HH:mm:ss     ");
-        Date curDate    =   new    Date(System.currentTimeMillis());
-        String    str    =    formatter.format(curDate);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss ");
+        Date curDate = new Date(System.currentTimeMillis());
+        String str = formatter.format(curDate);
         return str;
     }
 

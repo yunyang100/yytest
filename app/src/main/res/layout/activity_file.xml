@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yyun.yytest.FileActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/btn_savefile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="savefile" />
+    <Button
+        android:id="@+id/btn_readfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="readfile" />
+
+    <TextView
+        android:id="@+id/showfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</android.support.v7.widget.LinearLayoutCompat>
