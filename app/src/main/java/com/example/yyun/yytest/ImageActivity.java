@@ -17,13 +17,13 @@ import java.io.InputStream;
 public class ImageActivity extends AppCompatActivity {
 
 
-    private  static int AACAMERA_REQUEST_CODE=1;
+    private  static int BBCAMERA_REQUEST_CODE=1;
     private  static int GALLARY_REQUEST_CODE=2;
     private  static int CHECK_REQUEST_CODE=3;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode==AACAMERA_REQUEST_CODE){
+        if(requestCode==BBCAMERA_REQUEST_CODE){
             if(data==null){
                 return;
             }
@@ -79,7 +79,7 @@ public class ImageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent,AACAMERA_REQUEST_CODE);
+                startActivityForResult(intent,BBCAMERA_REQUEST_CODE);
             }
         });
 
