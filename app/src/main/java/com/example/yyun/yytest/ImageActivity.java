@@ -17,15 +17,15 @@ import java.io.InputStream;
 public class ImageActivity extends AppCompatActivity {
 
 
-    private  static int BBCAMERA_REQUEST_CODE=1;
+    private  static int CAMERA_REQUEST_CODE=1;
 
-    private  static int AAGALLARY_REQUEST_CODE=2;
+    private  static int GALLARY_REQUEST_CODE=2;
 
     private  static int CHECK_REQUEST_CODE=3;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode==BBCAMERA_REQUEST_CODE){
+        if(requestCode==CAMERA_REQUEST_CODE){
             if(data==null){
                 return;
             }
@@ -39,7 +39,7 @@ public class ImageActivity extends AppCompatActivity {
             }
         }
 
-        else if(requestCode==AAGALLARY_REQUEST_CODE){
+        else if(requestCode==GALLARY_REQUEST_CODE){
 
 
             if(data==null){
@@ -83,7 +83,7 @@ public class ImageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent,BBCAMERA_REQUEST_CODE);
+                startActivityForResult(intent,CAMERA_REQUEST_CODE);
             }
         });
 
@@ -94,7 +94,7 @@ public class ImageActivity extends AppCompatActivity {
                 Intent intent=new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
 
-                startActivityForResult(intent,AAGALLARY_REQUEST_CODE);
+                startActivityForResult(intent,GALLARY_REQUEST_CODE);
 
             }
         });
