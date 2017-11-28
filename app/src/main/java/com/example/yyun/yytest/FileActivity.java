@@ -30,7 +30,7 @@ public class FileActivity extends BaseActivity {
         setContentView(R.layout.activity_file);
 
         Button btn_saaaaaaaaaaaaaaaveFile = (Button) findViewById(R.id.btn_savefile);
-        Button btn_readFile = (Button) findViewById(R.id.btn_readfile);
+        Button btn_readFileddddddddddd = (Button) findViewById(R.id.btn_readfile);
 
 
         final EditText editText = (EditText) findViewById(R.id.editfile);
