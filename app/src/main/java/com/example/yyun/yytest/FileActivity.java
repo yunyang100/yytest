@@ -29,7 +29,7 @@ public class FileActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_file);
 
-        Button btn_saveFile = (Button) findViewById(R.id.btn_savefile);
+        Button btn_saaaaaaaaaaaaaaaveFile = (Button) findViewById(R.id.btn_savefile);
         Button btn_readFile = (Button) findViewById(R.id.btn_readfile);
 
 
