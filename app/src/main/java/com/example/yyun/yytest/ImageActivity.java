@@ -18,7 +18,7 @@ public class ImageActivity extends AppCompatActivity {
 
 
     private  static int BBCAMERA_REQUEST_CODE=1;
-    private  static int GALLARY_REQUEST_CODE=2;
+    private  static int AAGALLARY_REQUEST_CODE=2;
     private  static int CHECK_REQUEST_CODE=3;
 
     @Override
@@ -36,7 +36,7 @@ public class ImageActivity extends AppCompatActivity {
                 }
             }
         }
-        else if(requestCode==GALLARY_REQUEST_CODE){
+        else if(requestCode==AAGALLARY_REQUEST_CODE){
 
             if(data==null){
                 return;
@@ -89,7 +89,7 @@ public class ImageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
-                startActivityForResult(intent,GALLARY_REQUEST_CODE);
+                startActivityForResult(intent,AAGALLARY_REQUEST_CODE);
             }
         });
 
